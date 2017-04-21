@@ -183,7 +183,7 @@ x. Home
 *********************************************************************************************/
 #home {
 	width: auto; height: 600px;
-	background: url(../img/bg.jpg) bottom center no-repeat #D4AF37;
+	background: url(../img/bg.jpg) bottom center no-repeat #999;
 }
 
 #home .row {
