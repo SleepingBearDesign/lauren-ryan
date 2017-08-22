@@ -27,7 +27,7 @@ function initMap() {
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 15,
-      center: {lat: 42.961408, lng: -85.6700113},
+      center: {lat: 42.9630364, lng: -85.6693039},
       scrollwheel:  false,
       mapTypeControlOptions: {
         mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
@@ -52,30 +52,30 @@ function initMap() {
         strokeWeight: 1
       };
     
-    // var churchContentString = '<div id="content">'+
-    //   '<div id="siteNotice">'+
-    //   '</div>'+
-    //   '<h4>Cook-Dewitt Center at Grand Valley State University</h4>'+
-    //   '<div id="bodyContent">'+
-    //   '<p>The lovely couple will be married at Cook-Dewitt Center at 3:30pm.</p>'+
-    //   '<a target="_blank" href="https://goo.gl/maps/AocZ1NjKev12">'+
-    //   'Directions</a> '+
-    //   '</div>'+
-    //   '</div>';
+     var hotelContentString = '<div id="content">'+
+       '<div id="siteNotice">'+
+       '</div>'+
+       '<h4>Homewood Suites by Hilton Grand Rapids Downtown</h4>'+
+       '<div id="bodyContent">'+
+       '<p>Accomadations at 161 Ottawa Ave NW, Grand Rapids, MI.</p>'+
+       '<a target="_blank" href="https://goo.gl/maps/8Zj7Dv3SBjr">'+
+       'Directions</a> '+
+       '</div>'+
+       '</div>';
 
-    //   var churchInfoWindow = new google.maps.InfoWindow({
-    //     content: churchContentString
-    //   });
-    //   var churchPosition = {lat: 42.9637676, lng: -85.8892679};
+       var hotelInfoWindow = new google.maps.InfoWindow({
+         content: hotelContentString
+       });
+       var hotelPosition = {lat: 42.9668167, lng: -85.6728015};
 
-    //   var churchMarker = new google.maps.Marker({
-    //     position: churchPosition,
-    //     map: map,
-    //     title: 'Cook-Dewitt Center'
-    //   });
-      // churchMarker.addListener('click', function() {
-      //   churchInfoWindow.open(map, churchMarker);
-      // });
+       var hotelMarker = new google.maps.Marker({
+         position: hotelPosition,
+         map: map,
+         title: 'Hilton - Homewood Suites'
+       });
+       hotelMarker.addListener('click', function() {
+         hotelInfoWindow.open(map, hotelMarker);
+       });
     
     var barContentString = '<div id="content">'+
       '<div id="siteNotice">'+
